@@ -16,18 +16,22 @@ import StatsSection from '../components/StatsSection'
 import WelcomePage from '../components/WelcomePage'
 import observer, { handleAsideLinks, handleNavLinks } from '../observer'
 
-const sections = document.querySelectorAll('section');
-const articles = document.querySelectorAll('.content-article')
-sections.forEach(sec => {
-  observer(handleNavLinks).observe(sec)
-})
 
-articles.forEach(art => {
-  observer(handleAsideLinks).observe(art)
-})
 
 const Home: NextPage = () => {
   const [header, setHeader] = useState(false)
+
+  if(typeof document !== "undefined") {
+    const sections = document.querySelectorAll('section');
+    const articles = document.querySelectorAll('.content-article')
+    sections.forEach(sec => {
+      observer(handleNavLinks).observe(sec)
+    })
+
+    articles.forEach(art => {
+      observer(handleAsideLinks).observe(art)
+    })
+  }
 
   useEffect(() => {
     const handleNav = () => {
