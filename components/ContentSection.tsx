@@ -5,8 +5,8 @@ import Article from "./Article"
 
 const ContentSection = () => {
   return (
-    <section id="chapter" className="scroll-smooth">
-        <h2 className='text-2xl md:text-4xl lg:text-5xl font-extrabold text-slate-800 text-center'>What{"'"}s Inside The Book</h2>
+    <section id="chapter">
+        <h2 className='text-2xl md:text-4xl lg:text-5xl font-bold text-slate-800 text-center'>What{"'"}s Inside The Book</h2>
         <div className="my-10 flex flex-col md:flex-row gap-10">
             <aside className="">
                 <ul className='w-full flex flex-col list-none gap-4 md:sticky md:top-[25%] p-4'>

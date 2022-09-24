@@ -47,21 +47,32 @@ const Home: NextPage = () => {
 
 
   return (
-    <main className=''>
-      {header ? <Header className=' fixed top-0 right-0 left-0 bg-white z-40' /> : <Header />}
-      <Container className='p-4 md:p-6 flex flex-col gap-8 md:gap-12 lg:gap-16'>
-        <WelcomePage />
-        <Brands />
-        <AboutSection />
-        <StatsSection />
-        <ContentSection />
-        <ServicesSection />
-        <ProjectsSection />
-        <ManSection />
-        <ContactSection />
-      </Container>
-      <Footer />
-    </main>
+    <>
+      <Head>
+        <title>TakiSnani | Author</title>
+        <meta name='description' content='A Landing page made using Next js, Tailwindcss, Typescript' />
+        <meta name='keywords' content='Landing page, Author, TakiSnani.' />
+        <meta name='authors' content='Landing page, Author, TakiSnani.' />
+        <meta name="revised" content='Taki Snani, 9/24/2022' />
+        <meta name="author" content="Taki Snani" />
+        <meta http-equiv="refresh" content="10" />
+      </Head>
+      <main className=''>
+        {header ? <Header className=' fixed top-0 right-0 left-0 bg-white z-40' /> : <Header />}
+        <Container className='p-4 md:p-6 flex flex-col gap-8 md:gap-12 lg:gap-16'>
+          <WelcomePage />
+          <Brands />
+          <AboutSection />
+          <StatsSection />
+          <ContentSection />
+          <ServicesSection />
+          <ProjectsSection />
+          <ManSection />
+          <ContactSection />
+        </Container>
+        <Footer />
+      </main>
+    </>
   )
 }
 

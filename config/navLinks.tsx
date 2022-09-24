@@ -9,7 +9,7 @@ export default [
         text: 'chapter'
     },
     {
-        text: 'reviews'
+        text: 'services'
     },
     {
         text: 'my books'
