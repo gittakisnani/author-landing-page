@@ -3,7 +3,7 @@ import Read from '../public/assets/Read.svg'
 
 const WelcomePage = () => {
   return (
-    <section className='flex gap-2 items-center md:justify-between min-h-[80vh]'>
+    <section id='home' className='flex gap-2 items-center md:justify-between min-h-[80vh]'>
           <div className='text-center md:text-left w-full mx-auto max-w-[460px]'>
             <h4 className='font-bold tracking-wider uppercase text-primary'>
               BEST SELLER BOOK OF THE WEEK

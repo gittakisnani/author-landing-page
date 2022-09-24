@@ -9,7 +9,7 @@ import Book8 from '../public/assets/Book8.webp'
 import Book from './Book'
 const ProjectsSection = () => {
   return (
-    <section className='text-center'>
+    <section id='mybooks' className='text-center'>
         <h3 className='text-primary font-bold'>Projects</h3>
         <h3 className='text-slate-800 font-bold text-2xl md:text-4xl lg:text-5xl mt-2 mb-10'>
             My Other Books

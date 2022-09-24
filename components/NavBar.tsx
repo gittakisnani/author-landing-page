@@ -11,7 +11,7 @@ const NavBar = ({ nav, handleNav }: { nav: boolean, handleNav: () => void }) => 
         <MdOutlineClose />
       </button>
       {navLinks.map(({ text }, index) => (
-        <Link key={index} href={`/${text}`}>
+        <Link key={index} href={`/#${text.replace(' ', '')}`}>
           <a className="navLink">{text}</a>
         </Link>
       ))}

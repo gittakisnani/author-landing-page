@@ -14,6 +14,18 @@ import ProjectsSection from '../components/ProjectsSection'
 import ServicesSection from '../components/ServicesSection'
 import StatsSection from '../components/StatsSection'
 import WelcomePage from '../components/WelcomePage'
+import observer, { handleAsideLinks, handleNavLinks } from '../observer'
+
+const sections = document.querySelectorAll('section');
+const articles = document.querySelectorAll('.content-article')
+sections.forEach(sec => {
+  observer(handleNavLinks).observe(sec)
+})
+
+articles.forEach(art => {
+  observer(handleAsideLinks).observe(art)
+})
+
 const Home: NextPage = () => {
   const [header, setHeader] = useState(false)
 
@@ -36,8 +48,7 @@ const Home: NextPage = () => {
 
   return (
     <main className=''>
-      <Header />
-      {header && <Header className=' fixed top-0 right-0 left-0 bg-white z-40' /> }
+      {header ? <Header className=' fixed top-0 right-0 left-0 bg-white z-40' /> : <Header />}
       <Container className='p-4 md:p-6 flex flex-col gap-8 md:gap-12 lg:gap-16'>
         <WelcomePage />
         <Brands />

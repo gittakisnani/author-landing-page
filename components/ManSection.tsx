@@ -3,7 +3,7 @@ import Man1 from '../public/assets/Man1.webp'
 
 const ManSection = () => {
   return (
-    <section className='flex items-center'>
+    <section id='author' className='flex items-center'>
         <div className='book self-stretch hidden md:block md:basis-1/2'>
             <Image src={Man1} alt='Man' className='!bg-cover' />
         </div>

@@ -2,7 +2,7 @@ import Image from 'next/image'
 import About from '../public/assets/About.png'
 const AboutSection = () => {
   return (
-    <section className="flex gap-10 md:items-center md:justify-between">
+    <section id='about' className="flex gap-10 md:items-center md:justify-between">
         <div className='hidden md:block self-stretch book'>
             <Image className='w-full h-full bg-cover' src={About} alt='About' />
         </div>

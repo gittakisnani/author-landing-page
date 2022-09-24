@@ -3,7 +3,7 @@ import Contact from './Contact'
 import { FaMapMarkerAlt, HiPhone, FaTelegramPlane, GiEarthAmerica } from './Icons'
 const ContactSection = () => {
   return (
-    <section>
+    <section id='contact'>
         <h2 className='text-2xl md:text-4xl lg:text-5xl font-bold text-center text-slate-800'>Contact Me</h2>
         <p className='text-center text-slate-500 my-6 max-w-[500px] mx-auto'>
         Far far away, behind the word mountains, far from the countries Vokalia and Consonantia

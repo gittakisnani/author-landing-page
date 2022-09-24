@@ -6,7 +6,7 @@ import Microsoft from '../public/assets/brands/Microsoft.png'
 import Image from 'next/image'
 const Brands = () => {
   return (
-    <section>
+    <section id='brands'>
           <div className='flex flex-col md:flex-row md:justify-between gap-10 md:items-center'>
             <div className='mx-auto max-w-[200px]'>
             <Image src={Adobe} alt='Adobe' />

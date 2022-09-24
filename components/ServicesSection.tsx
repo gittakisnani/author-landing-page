@@ -4,7 +4,7 @@ import Service from './Service'
 
 const ServicesSection = () => {
   return (
-    <section>
+    <section id='services'>
         <h3 className='text-slate-800 font-semibold text-2xl md:text-4xl lg:text-5xl text-center'>
             Services
         </h3>
