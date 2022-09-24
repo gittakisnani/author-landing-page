@@ -3,7 +3,7 @@ import About from '../public/assets/About.png'
 const AboutSection = () => {
   return (
     <section className="flex gap-10 md:items-center md:justify-between">
-        <div className='hidden md:block self-stretch h-full'>
+        <div className='hidden md:block self-stretch book'>
             <Image className='w-full h-full bg-cover' src={About} alt='About' />
         </div>
         <article className='md:basis-1/2'>

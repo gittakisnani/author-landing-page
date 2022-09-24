@@ -1,4 +1,4 @@
-import { ArticleInterface } from "../config/ArticlesConfig"
+import { ArticleInterface } from "../config/articlesConfig"
 
 const Article = ({ title, desc, link }: ArticleInterface) => {
   return (

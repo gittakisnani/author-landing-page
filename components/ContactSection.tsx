@@ -45,7 +45,7 @@ const ContactSection = () => {
             </Contact>
             <Contact>
                 <div className='flex flex-col items-center gap-1'>
-                    <span className='h-[100px] w-[100px] bg-primary flex items-center justify-center text-xl text-white rounded-full'>
+                    <span className='h-[100px] w-[100px] bg-primary flex items-center justify-center text-2xl text-white rounded-full'>
                         <GiEarthAmerica />
                     </span>
                     <p className='font-semibold text-lg text-slate-800'>Website</p>
