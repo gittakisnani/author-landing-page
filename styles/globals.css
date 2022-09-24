@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  font-family: 'Open Sans', sans-serif;
+  min-height: 100vh;
+  width: 100vw;
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+  .transitions {
+    @apply duration-200 ease-out
+  }
+
+  .offscreen {
+    @apply absolute right-[12000px]
+  }
+}
+
+@layer components {
+  .logo {
+    @apply text-xl md:text-2xl font-semibold tracking-tight text-black
+  }
+
+  .navLink {
+    @apply capitalize font-semibold  after:transitions duration-300 after:absolute md:relative after:content-[''] after:w-0 hover:after:w-full after:h-[3px] after:left-1/2 after:bottom-0 after:-translate-x-1/2 after:bg-primary md:pb-1
+  }
+
+  .cta {
+    @apply p-4 rounded-[2rem] text-white transitions bg-primary/80 hover:bg-primary font-semibold uppercase -tracking-wide
+  }
+
+  .input {
+    @apply transitions hover:border-black focus:border-black border-2 border-transparent outline-none p-2 rounded-md
+  }
+
+  .footer_title {
+    @apply text-xl font-semibold text-white
+  }
+
+  .footer_link {
+    @apply bg-gray-200/20 text-white h-10 w-10 rounded-full flex items-center justify-center
+  }
+}
+
+
+.book > span {
+  height: 100% !important;
+  width: 100% !important;
+}

@@ -1,0 +1,6 @@
+export { FaQuoteRight, FaMapMarkerAlt, FaTelegramPlane } from 'react-icons/fa'
+export { HiPhone, HiMenu } from 'react-icons/hi'
+export { GiEarthAmerica } from 'react-icons/gi'
+export { BsTwitter, BsGithub, BsLinkedin } from 'react-icons/bs'
+export { AiFillHeart } from 'react-icons/ai'
+export { MdOutlineClose } from 'react-icons/md'
