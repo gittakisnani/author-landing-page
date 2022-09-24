@@ -59,7 +59,6 @@ const Home: NextPage = () => {
         <meta name='authors' content='Landing page, Author, TakiSnani.' />
         <meta name="revised" content='Taki Snani, 9/24/2022' />
         <meta name="author" content="Taki Snani" />
-        <meta http-equiv="refresh" content="10" />
       </Head>
       <main className=''>
         {header ? <Header className=' fixed top-0 right-0 left-0 bg-white z-40' /> : <Header />}
