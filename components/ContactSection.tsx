@@ -1,4 +1,5 @@
 import React from 'react'
+import { Fade } from 'react-awesome-reveal'
 import Contact from './Contact'
 import { FaMapMarkerAlt, HiPhone, FaTelegramPlane, GiEarthAmerica } from './Icons'
 const ContactSection = () => {
@@ -56,7 +57,8 @@ const ContactSection = () => {
             </Contact>
         </div>
 
-        <div className='bg-gray-100 p-8 my-10'>
+        <div className='bg-gray-100 p-4 md:p-8 my-10'>
+            <Fade direction='right'>
             <form className='flex flex-col gap-4'>
                 <label htmlFor='name' className='offscreen'>
                     Name
@@ -96,6 +98,7 @@ const ContactSection = () => {
 
                 <button className='cta'>Send Message</button>
             </form>
+            </Fade>
         </div>
     </section>
   )

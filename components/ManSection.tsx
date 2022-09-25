@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { Fade } from 'react-awesome-reveal'
 import Man1 from '../public/assets/Man1.webp'
 
 const ManSection = () => {
@@ -8,6 +9,7 @@ const ManSection = () => {
             <Image src={Man1} alt='Man' className='!bg-cover' />
         </div>
         <div className='p-8 py-12 bg-gray-200/70 self-stretch max-w-full md:basis-1/2'>
+            <Fade direction='right'>
             <h4 className='text-primary font-bold text-xl'>Know More About The Author</h4>
             <h2 className='text-2xl md:text-4xl lg:text-5xl my-6 text-slate-800 font-bold'>
                 Franklin <br /> Henderson
@@ -32,6 +34,7 @@ const ManSection = () => {
                 </div>
             </div>
             <button className='cta capitalize'>120 View all books</button>
+            </Fade>
         </div>
     </section>
   )

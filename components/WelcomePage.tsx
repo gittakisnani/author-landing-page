@@ -1,9 +1,11 @@
 import Image from 'next/image'
+import { Fade } from 'react-awesome-reveal'
 import Read from '../public/assets/Read.svg'
 
 const WelcomePage = () => {
   return (
     <section id='home' className='flex gap-2 items-center md:justify-between min-h-[80vh]'>
+          <Fade direction='left' triggerOnce>
           <div className='text-center md:text-left w-full mx-auto max-w-[460px]'>
             <h4 className='font-bold tracking-wider uppercase text-primary'>
               BEST SELLER BOOK OF THE WEEK
@@ -18,9 +20,12 @@ const WelcomePage = () => {
 
             <button className='cta mt-4'>Buy now for $22.99</button>
           </div>
-          <div className='hidden md:block'>
-            <Image src={Read} alt='Read' />
-          </div>
+          </Fade>
+          <Fade direction='right' triggerOnce>
+            <div className='hidden md:block'>
+              <Image src={Read} alt='Read' />
+            </div>
+          </Fade>
         </section>
   )
 }

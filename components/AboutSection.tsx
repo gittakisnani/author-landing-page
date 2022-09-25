@@ -1,12 +1,16 @@
 import Image from 'next/image'
 import About from '../public/assets/About.png'
+import { Fade } from 'react-awesome-reveal'
 const AboutSection = () => {
   return (
     <section id='about' className="flex gap-10 md:items-center md:justify-between">
         <div className='hidden md:block self-stretch book'>
+          <Fade direction='left'>
             <Image className='w-full h-full bg-cover' src={About} alt='About' />
+          </Fade>
         </div>
         <article className='md:basis-1/2'>
+          <Fade cascade triggerOnce direction='right'>
             <h2 className='text-slate-800 font-bold text-2xl md:text-4xl lg:text-5xl'>
             About The Book
             </h2>
@@ -31,6 +35,7 @@ const AboutSection = () => {
             <p className='text-gray-400 text-lg my-4'>
             Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
             </p>
+            </Fade>
         </article>
     </section>
   )

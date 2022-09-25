@@ -7,9 +7,11 @@ import Book6 from '../public/assets/Book6.webp'
 import Book7 from '../public/assets/Book7.webp'
 import Book8 from '../public/assets/Book8.webp'
 import Book from './Book'
+import { Fade } from 'react-awesome-reveal'
 const ProjectsSection = () => {
   return (
     <section id='mybooks' className='text-center'>
+      <Fade cascade> 
         <h3 className='text-primary font-bold'>Projects</h3>
         <h3 className='text-slate-800 font-bold text-2xl md:text-4xl lg:text-5xl mt-2 mb-10'>
             My Other Books
@@ -20,6 +22,7 @@ const ProjectsSection = () => {
                 <Book image={book} key={index} />
             ))}
         </div>
+        </Fade>
     </section>
   )
 }
