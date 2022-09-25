@@ -17,7 +17,7 @@ const NotFound: NextPage = () => {
         <h2 className='font-bold text-2xl md:text-4xl lg:text-6xl tracking-tighter'>4😢4</h2>
         <p className='desc text md:text-2xl my-2 uppercase font-semibold'>OOPS! PAGE DOES NOT EXIST!</p>
         <p className='text-slate-700/70 text-sm font-light max-w-[400px] text-center'>
-            Sorry but the page you're looking for does not exist. Have been removed, name changed or it's temporarily unavailable
+            Sorry but the page you{"'"}re looking for does not exist. Have been removed, name changed or it{"'"}s temporarily unavailable
         </p>
         <Link href='/'>
             <a className='cta capitalize mt-2'>Back to home</a>
