@@ -28,7 +28,7 @@ const Footer = () => {
             <h5 className='footer_title'>Links</h5>
             <ul className='list-none flex flex-col gap-2 mt-6'>
               {['Home', 'About', 'Chapter', 'Reviews', 'Contact'].map((link, index) => (
-                <Link key={index} href={`/#${link.toLowerCase()}`}>
+                <Link key={index} href={`/#${link.replace(' ', '').toLowerCase()}`}>
                   <a className='text-gray-400'>{link}</a>
                 </Link>
               ))}
