@@ -4,7 +4,6 @@ import { Fade } from 'react-awesome-reveal'
 import Student from '../public/assets/Student.webp'
 import Man1 from '../public/assets/Man1.webp'
 import Man2 from '../public/assets/Man2.webp'
-import Man3 from '../public/assets/Man3.webp'
 import Man4 from '../public/assets/Man4.webp'
 import Testimonial from './Testimonial'
 import { Pagination, Autoplay } from 'swiper';
@@ -40,7 +39,7 @@ const TestimonialsSection = () => {
                 pagination={{clickable: true, currentClass: '!bg-primary'}}
                 slidesPerView={width! > 1024 ? 3 : width! > 768 ? 2 : 1}
                 >
-                    {[Man1, Man2, Man3, Man4, Man1, Man2, Man3, Man4].map((img, index) => (
+                    {[Man1, Man2, Man4, Man1, Man2, Man4].map((img, index) => (
                         <SwiperSlide key={index}>
                             <Testimonial key={index} img={img} />
                         </SwiperSlide>
