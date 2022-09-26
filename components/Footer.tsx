@@ -13,13 +13,13 @@ const Footer = () => {
             Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
             </p>
             <div className='flex gap-2 items-center'>
-              <a href="https://github.com/gittakisnani" target='_blank' rel='noopener noreferrer' className='footer_link'>
+              <a aria-label='GitHub account' href="https://github.com/gittakisnani" target='_blank' rel='noopener noreferrer' className='footer_link'>
                 <BsGithub />
               </a>
-              <a href="https://www.linkedin.com/in/taki-snani-1ba6ba236/" target='_blank' rel='noopener noreferrer' className='footer_link'>
+              <a aria-label='LinkedIn account' href="https://www.linkedin.com/in/taki-snani-1ba6ba236/" target='_blank' rel='noopener noreferrer' className='footer_link'>
                 <BsLinkedin />
               </a>
-              <a href="https://twitter.com/yestakisnani" target='_blank' rel='noopener noreferrer' className='footer_link'>
+              <a aria-label='Twitter account' href="https://twitter.com/yestakisnani" target='_blank' rel='noopener noreferrer' className='footer_link'>
                 <BsTwitter />
               </a>
             </div>
@@ -29,7 +29,9 @@ const Footer = () => {
             <ul className='list-none flex flex-col gap-2 mt-6'>
               {['Home', 'About', 'Chapter', 'Reviews', 'Contact'].map((link, index) => (
                 <Link key={index} href={`/#${link.replace(' ', '').toLowerCase()}`}>
-                  <a className='text-gray-400'>{link}</a>
+                  <a aria-label={link} className='text-gray-400'>
+                    <li>{link}</li>
+                    </a>
                 </Link>
               ))}
             </ul>
@@ -39,7 +41,9 @@ const Footer = () => {
             <ul className='list-none flex flex-col gap-2 mt-6'>
               {['Experience', 'Marketing Goals', 'Targeting Vision'].map((link, index) => (
                 <Link key={index} href='/'>
-                  <a className='text-gray-400'>{link}</a>
+                  <a aria-label={link} className='text-gray-400'>
+                    <li>{link}</li>
+                  </a>
                 </Link>
               ))}
             </ul>
@@ -57,11 +61,11 @@ const Footer = () => {
               </li>
               <li className='flex gap-2 items-center'>
                 <span className='text-2xl text-white'><HiPhone /></span>
-                <a href="tel:+2 392 3929 210">+2 392 3929 210</a>
+                <a aria-label='Call me on phone number: +2 392 3929 210' href="tel:+2 392 3929 210">+2 392 3929 210</a>
               </li>
               <li className='flex gap-2 items-center'>
                 <span className='text-2xl text-white'><FaTelegramPlane /></span>
-                <a href="mailto:">takisnbusiness@gmail.com</a>
+                <a aria-label='Contact me on my email: takisnbusiness@gmail.com' href="mailto:">takisnbusiness@gmail.com</a>
               </li>
             </ul>
           </div>

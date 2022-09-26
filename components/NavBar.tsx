@@ -12,7 +12,7 @@ const NavBar = ({ nav, handleNav }: { nav: boolean, handleNav: () => void }) => 
       </button>
       {navLinks.map(({ text }, index) => (
         <Link key={index} href={`/#${text.replace(' ', '')}`}>
-          <a className="navLink">{text}</a>
+          <a aria-label={text} className="navLink">{text}</a>
         </Link>
       ))}
     </nav>

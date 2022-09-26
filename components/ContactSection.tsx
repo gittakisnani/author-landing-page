@@ -92,7 +92,7 @@ const ContactSection = () => {
                 </label>
                 <textarea 
                 className='input resize-y min-h-[100px]'
-                id='name'
+                id='message'
                 placeholder='Message'
                 />
 

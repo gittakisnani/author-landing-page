@@ -12,7 +12,7 @@ const ContentSection = () => {
                 <ul className='w-full flex flex-col list-none gap-4 md:sticky md:top-[25%] p-4'>
                     {contentConfig.map(({ text, link }, index) => (
                         <Link href={link} key={index}>
-                            <a className='text-slate-800 hover:text-primary transitions text-lg font-semibold capitalize asideLink'>
+                            <a aria-label={text} className='text-slate-800 hover:text-primary transitions text-lg font-semibold capitalize asideLink'>
                                 <li>{text}</li>
                             </a>
                         </Link>
