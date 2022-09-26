@@ -8,10 +8,7 @@ import Man3 from '../public/assets/Man3.webp'
 import Man4 from '../public/assets/Man4.webp'
 import Testimonial from './Testimonial'
 import { Pagination, Autoplay } from 'swiper';
-
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import useWindowSize from '../hooks/useWindowSize'
