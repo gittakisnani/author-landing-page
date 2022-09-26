@@ -1,8 +1,12 @@
-import React from 'react'
+import Link from 'next/link'
 
 const Logo = () => {
   return (
-    <h3 className='logo'>TakiSnani<span className='text-primary'>.</span></h3>
+    <Link href='/'>
+      <a>
+        <h2 className='logo'>TakiSnani<span className='text-primary'>.</span></h2>
+      </a>
+    </Link>
   )
 }
 
