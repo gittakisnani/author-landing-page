@@ -15,6 +15,7 @@ import ServicesSection from '../components/ServicesSection'
 import StatsSection from '../components/StatsSection'
 import WelcomePage from '../components/WelcomePage'
 import observer, { handleAsideLinks, handleNavLinks } from '../observer'
+import TestimonialsSection from '../components/TestimonialsSection'
 
 
 
@@ -62,7 +63,7 @@ const Home: NextPage = () => {
       </Head>
       <main className=''>
         {header ? <Header className=' fixed top-0 right-0 left-0 bg-white z-40 shadow-2xl shadow-black/10' /> : <Header />}
-        <Container className='p-4 md:p-6 flex flex-col gap-8 md:gap-12 lg:gap-16'>
+        <Container className='p-4 md:p-6 flex flex-col gap-10 md:gap-16 lg:gap-16'>
           <WelcomePage />
           <Brands />
           <AboutSection />
@@ -70,6 +71,7 @@ const Home: NextPage = () => {
           <ContentSection />
           <ServicesSection />
           <ProjectsSection />
+          <TestimonialsSection />
           <ManSection />
           <ContactSection />
         </Container>

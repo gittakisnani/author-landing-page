@@ -54,10 +54,15 @@ body::-webkit-scrollbar {
   .footer_link {
     @apply bg-gray-200/20 text-white h-10 w-10 rounded-full flex items-center justify-center
   }
+
 }
 
 
 .book > span {
   height: 100% !important;
   width: 100% !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #17b978 !important;
 }

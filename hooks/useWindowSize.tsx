@@ -6,7 +6,7 @@ interface WindowSize {
     height: number
 }
 
-const check = [document, window].every(el => typeof el !== "undefined")
+const check = typeof document !== "undefined" && typeof window !== "undefined"
 
 const useWindowSize = () => {
   const [windowSize, setWindowSize] = useState<WindowSize>({
