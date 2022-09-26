@@ -18,7 +18,7 @@ const TestimonialsSection = () => {
     const { width } = useWindowSize()
   return (
     <section id='testimonials' className='text-center'>
-      <Fade cascade> 
+      <Fade cascade triggerOnce> 
         <h3 className='text-slate-800 font-bold'>Projects</h3>
         <h3 className='text-slate-800 font-bold text-2xl md:text-4xl lg:text-5xl mt-2 mb-10'>
             My Other Books
