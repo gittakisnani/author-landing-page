@@ -58,12 +58,13 @@ const ContactSection = () => {
         </div>
 
         <div className='bg-gray-100 p-4 md:p-8 my-10'>
-            <Fade direction='right'>
+            <Fade triggerOnce>
             <form className='flex flex-col gap-4'>
                 <label htmlFor='name' className='offscreen'>
                     Name
                 </label>
                 <input 
+                required
                 type="text" 
                 className='input'
                 id='name'
@@ -73,6 +74,7 @@ const ContactSection = () => {
                     Email
                 </label>
                 <input 
+                required
                 type="email" 
                 className='input'
                 id='email'
@@ -82,6 +84,7 @@ const ContactSection = () => {
                     Subject
                 </label>
                 <input 
+                required
                 type="text" 
                 className='input'
                 id='sub'
@@ -91,6 +94,7 @@ const ContactSection = () => {
                     Message
                 </label>
                 <textarea 
+                required
                 className='input resize-y min-h-[100px]'
                 id='message'
                 placeholder='Message'

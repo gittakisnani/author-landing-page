@@ -61,7 +61,7 @@ const Home: NextPage = () => {
         <meta name="revised" content='Taki Snani, 9/24/2022' />
         <meta name="author" content="Taki Snani" />
       </Head>
-      <main className=''>
+      <main className='w-screen overflow-hidden md:overflow-visible'>
         {header ? <Header className=' fixed top-0 right-0 left-0 bg-white z-40 shadow-2xl shadow-black/10' /> : <Header />}
         <Container className='p-4 md:p-6 flex flex-col gap-10 md:gap-16 lg:gap-16'>
           <WelcomePage />

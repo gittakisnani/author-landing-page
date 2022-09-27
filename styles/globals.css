@@ -8,13 +8,13 @@
 html, body {
   font-family: 'Poppins', sans-serif;
   min-height: 100vh;
-  width: 100vw;
   scroll-behavior: smooth !important;
 }
 
-body::-webkit-scrollbar {
-  display: none;
+body {
+  overflow-x: hidden;
 }
+
 
 @layer utilities {
   .transitions {
